@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+/*-----------------------*/
+/* Custom properties    */
+/*-----------------------*/
+:root{
+    --clr-dblue:212, 24%, 26%;
+    --clr-gblue:211, 10%, 45%;
+    --clr-lgray:223, 19%, 93%;
+    --clr-vlgray:228, 33%, 97%;
+    --clr-white:0, 0%, 100%;
+}
+/*-----------------------*/
+/* Reset                 */
+/*-----------------------*/
+
+/* Box Sizing */
+*{
+    box-sizing: border-box;
+}
+
+/* reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img,
+picture{
+    margin:0;
+}
+/* body resets */
+body{
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+/* picture resets */
+img,
+picture{
+    max-width: 100%;
+    display: block;
+}
+/* forms reset */
+input,
+button,
+textarea,
+select{
+    font: inherit;
+}
+/* remove animations for people who've turned them off */
+
+@media (prefers-reduced-motion: reduce) {  
+    * 
+    {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+/*-----------------------*/
+/* Utility               */
+/*-----------------------*/
+.flex{
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+.grid{
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+.block{
+    display: block;
+    gap: var(--gap, 1rem);
+}
+.container {
+    padding-inline: 2em;
+    margin-inline: auto;
+    max-width: 80rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+/* colors */
+.bg-dblue{background-color: hsl(var(--clr-dblue));}
+.bg-gblue{background-color: hsl(var(--clr-gblue));}
+.bg-lgray{background-color: hsl(var(--clr-lgray));}
+.bg-vlgray{background-color: hsl(var(--clr-vlgray));}
+.bg-white{background-color: hsl(var(--clr-white));}
+
+.text-dblue{color: hsl(var(--clr-dblue));}
+.text-gblue{color: hsl(var(--clr-gblue));}
+.text-lgray{color: hsl(var(--clr-dblue));}
+.text-vlgray{color: hsl(var(--clr-dblue));}
+.text-white{color: hsl(var(--clr-dblue));}

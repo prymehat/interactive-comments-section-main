@@ -54,6 +54,8 @@ img,
 picture{
     max-width: 100%;
     display: block;
+    max-height: 2.5rem;
+    
 }
 /* forms reset */
 input,
@@ -89,12 +91,13 @@ select{
     gap: var(--gap, 1rem);
 }
 .container {
-    margin-top: 10rem;
+    margin-top: 3rem;
     padding-inline: 2em;
     margin-inline: auto;
-    max-width: 60%;
+    max-width: 50%;
+    min-width: 30rem;
     max-height: 100%;
-    outline: 5px solid black;
+
 }
 
 .sr-only {
@@ -151,6 +154,42 @@ select{
 
 
 .comment-row{
-    height: 10rem;
+    min-height: 12rem;
     width: 100%;
+    padding: 2rem;
+    position: relative;
+    border-radius: 0.7rem;
+}
+.score{
+    height: 6.5rem;
+    width: 3rem;
+    padding: 0.6rem 0.1rem;
+    border-radius: 0.7rem;
+    justify-items: center;
+
+
+}
+.comment-main{
+   
+    min-height: 8rem;
+    width: 100%;
+
+}
+.name-time{
+    min-height: 2rem;
+    width: 100%;
+    
+}
+.typing-main{
+    min-height: 3.5rem;
+    width: 100%;
+   
+}
+.name-time-content{
+    padding:0.3rem 0.8rem;
+}
+.reply-box{
+    margin-left: inherit;
+    max-width: 86%;
+
 }
